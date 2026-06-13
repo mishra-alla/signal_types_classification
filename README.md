@@ -41,11 +41,11 @@ KMeans, AgglomerativeClustering, DBSCAN, PCA
 4. **Кластеризация** — KMeans + PCA
 
 ## Структура проекта
-'''
+```
 ├── solution.ipynb      # JN с полным решением
 ├── submission.csv      # Файл с результатами (индекс - кластер)
 └── README.md           # Описание проекта
-'''
+```
 
 ## Результат
 - **Оптимальные параметры**:
