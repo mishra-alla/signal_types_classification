@@ -16,6 +16,8 @@
 
 ### Метрика: accuracy
 
+### Stack: KMeans, AgglomerativeClustering, DBSCAN, PCA
+
 ### Источник данных: Лаборатория Национального исследовательского ядерного университета МИФИ.
 
 ## Описание данных
@@ -43,11 +45,11 @@
 
 
 ## Результат
-- **Оптимальные параметры**: 
+- **Оптимальные параметры**:
 ```
     'features': ['amplitude', 'area', 'PSD', 'decay_time', 'skewness', 'kurtosis', \
                  'log_amplitude', 'log_area', 'log_decay', 'area_per_amplitude'],
-    'scaler': StandardScaler(),  
+    'scaler': StandardScaler(),
     'n_components': 2,
     'short_gate': 10
     'KMeans': n_clusters=3, random_state=42, n_init=10
@@ -57,13 +59,13 @@
 
 На графике видно три кластера:
 - **Фиолетовый** — гамма-кванты
-- **Зелёный** — нейтроны  
+- **Зелёный** — нейтроны
 - **Жёлтый** — шум/артефакты
 
 ### Качество кластеризации
 - **Silhouette score**: 0.45
 - **Submission score**: 0.567
-- **Финальный сабмит**: `submission.csv`
+- **Финальный сабмит**: `submission_10KM2.csv`
 
 ## Запуск
 1. Открыть `solution.ipynb` в Jupyter Notebook / VS Code / Google Colab
@@ -72,7 +74,7 @@
 4. Файл `submission.csv` будет создан автоматически
 
 
-## Автор: 
+## Автор:
 Мишра Алла
 
 
